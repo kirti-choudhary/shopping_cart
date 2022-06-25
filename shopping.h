@@ -10,11 +10,11 @@ class Product{
 	int price;
 
 public:
-	Product(){}//default constuctor ele it will show error
+	Product(){}
 	Product(int uq_id, string name,int price){
 		id = uq_id;
-		this->name = name;//assignment 
-		this->price = price;//using this because names are similar
+		this->name = name;
+		this->price = price;
 	}
 	string getDisplayName(){
 		return name + " : Rs " + to_string(price) + " \n";
@@ -31,9 +31,9 @@ class Item{
 	int quantity;
 
 public:
-	//Constructor using a Initialisation List
+	//Constructor using a Init List
 	Item(){}
-	Item(Product p, int q):product(p), quantity(q){} //initialisation
+	Item(Product p, int q):product(p), quantity(q){}
 
 	int getItemPrice(){
 		return quantity * product.price;

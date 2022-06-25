@@ -36,7 +36,7 @@ bool checkout(Cart &cart){
     }
 
     int total = cart.getTotal();
-    cout<<"pay in cash \n";
+    cout<<"pay in cash";
     int paid;
     cin>>paid;
     if(paid>=total){
